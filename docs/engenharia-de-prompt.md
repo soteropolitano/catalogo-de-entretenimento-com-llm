@@ -16,11 +16,12 @@ As instruções transformam uma conversa aberta em operações previsíveis sobr
 ## Fluxo de recomendação
 
 1. entender o pedido e as restrições da conversa;
-2. consultar notas, rejeições e referências do catálogo;
-3. retirar títulos já concluídos quando o pedido for por novidade;
-4. pesquisar informações temporais em fontes atuais;
-5. comparar os candidatos com o histórico;
-6. explicar por que cada sugestão pode funcionar.
+2. identificar a energia mental disponível naquele momento;
+3. consultar notas, rejeições, energia atribuída e referências do catálogo;
+4. retirar títulos já concluídos quando o pedido for por novidade;
+5. pesquisar informações temporais em fontes atuais;
+6. comparar os candidatos com o histórico e com a energia atual;
+7. explicar por que cada sugestão pode funcionar naquele momento.
 
 ## Guardrails
 
@@ -30,6 +31,7 @@ As instruções transformam uma conversa aberta em operações previsíveis sobr
 - não criar uma linha nova quando um alias resolve o título;
 - não afirmar disponibilidade sem uma fonte atual;
 - levar registros ambíguos para a aba de revisão.
+- não confundir energia mental com nota, prioridade ou qualidade.
 
 ## Aplicação profissional
 
