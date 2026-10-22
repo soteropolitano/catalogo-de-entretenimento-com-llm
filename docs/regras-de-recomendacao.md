@@ -14,6 +14,18 @@ Toda recomendação começa pela busca no catálogo. O título não deve aparece
 
 Uma crítica externa ajuda a explicar a escolha, mas não corrige o gosto pessoal.
 
+## Energia mental do momento
+
+Antes de recomendar, o assistente identifica a energia disponível: baixa, média ou alta. Quando essa informação não aparece no pedido, pode perguntar de forma simples ou apresentar opções separadas por nível.
+
+Cada conteúdo recebe uma energia mental estimada com base na atenção, na densidade da narrativa, no peso emocional e na experiência já registrada. A escolha cruza os dois lados:
+
+- energia baixa: priorizar algo fácil de acompanhar e interromper;
+- energia média: aceitar narrativas que exigem atenção moderada;
+- energia alta: liberar conteúdos densos, intensos ou que pedem maior envolvimento.
+
+Energia alta não significa qualidade maior. Um conteúdo excelente pode ser adequado para energia baixa, e um conteúdo ruim pode exigir muita atenção.
+
 ## Incerteza
 
 `citado`, `citado_recomendado` e `precisa_confirmar` não equivalem a conteúdo consumido. Se o título for genérico, a obra exata precisa ser identificada antes de alterar o histórico.
@@ -35,3 +47,4 @@ Uma boa saída contém:
 - possíveis ressalvas;
 - fonte atual quando houver afirmação temporal;
 - indicação de que o título já foi verificado contra o catálogo.
+- compatibilidade entre a energia necessária e a energia disponível.
