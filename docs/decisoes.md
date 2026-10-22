@@ -20,6 +20,10 @@ Filmes, séries e jogos podem aparecer com título original, tradução ou abrev
 
 Notas externas são apoio. A avaliação registrada pelo usuário é o sinal mais direto para calibrar futuras recomendações.
 
+## Separar vontade de energia
+
+Prioridade mostra o quanto quero consumir algo. Energia mental mostra o esforço necessário naquele momento. Um conteúdo pode ter prioridade máxima e ainda assim não ser a melhor escolha quando estou cansado.
+
 ## Manter os dados reais privados
 
 Histórico de consumo e preferências formam um perfil pessoal. O repositório público mostra o método com registros fictícios e mantém a base oficial no Drive.
