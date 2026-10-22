@@ -5,7 +5,7 @@
 Cada linha representa uma obra ou um jogo.
 
 ```text
-id,titulo,aliases,categoria,status_consumo,progresso,nota,prioridade,proxima_acao,confirmacao_status,origem,confianca,observacao,nota_num,fonte_avaliacao_prioritaria,url_fonte_prioritaria,fontes_secundarias,ultima_atualizacao,regra_recomendacao,subtipo_original,ordem_prioridade
+id,titulo,aliases,categoria,status_consumo,progresso,nota,prioridade,energia_mental,proxima_acao,confirmacao_status,origem,confianca,observacao,nota_num,fonte_avaliacao_prioritaria,url_fonte_prioritaria,fontes_secundarias,ultima_atualizacao,regra_recomendacao,subtipo_original,ordem_prioridade
 ```
 
 ## Campos principais
@@ -21,6 +21,7 @@ id,titulo,aliases,categoria,status_consumo,progresso,nota,prioridade,proxima_aca
 | `nota` | Avaliação preservada no formato informado |
 | `nota_num` | Versão numérica para filtros e indicadores |
 | `prioridade` | Ordem pessoal de interesse |
+| `energia_mental` | Esforço normalmente exigido para acompanhar o conteúdo |
 | `proxima_acao` | O que deve acontecer com o registro |
 | `confirmacao_status` | Distingue confirmação de inferência |
 | `origem` | De onde veio a informação |
@@ -42,3 +43,13 @@ id,titulo,aliases,categoria,status_consumo,progresso,nota,prioridade,proxima_aca
 - precisa confirmar.
 
 Os estados podem ser normalizados para uso técnico, mas a interface deve continuar apresentando termos fáceis de entender.
+
+## Energia mental
+
+| Nível | Uso |
+| --- | --- |
+| `baixa` | Conteúdo fácil de acompanhar quando estou cansado ou quero relaxar |
+| `média` | Exige atenção, mas não depende de concentração total |
+| `alta` | Conteúdo denso, emocionalmente intenso ou que pede atenção contínua |
+
+O valor descreve minha experiência esperada com o conteúdo. Ele pode ser ajustado depois de assistir e não deve ser calculado apenas pela categoria ou pela duração.
