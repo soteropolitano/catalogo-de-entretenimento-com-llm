@@ -11,11 +11,14 @@ O projeto já foi aplicado com uma base funcional. Este repositório publica a a
 - reúne filmes, séries, animes, documentários e jogos em um catálogo;
 - diferencia o que foi concluído, pausado, abandonado ou ainda está pendente;
 - mantém progresso, nota, prioridade e próxima ação;
+- atribui a cada conteúdo um nível de energia mental necessária;
 - registra títulos alternativos para reduzir duplicidades;
 - separa informação confirmada de algo que ainda precisa de validação;
 - consulta o histórico antes de fazer uma recomendação;
 - usa a avaliação pessoal como sinal principal de preferência;
 - consulta fontes atuais antes de afirmar disponibilidade, data ou plataforma.
+
+Além do histórico, a recomendação considera **como estou naquele momento**. Posso informar que minha energia mental está baixa, média ou alta. O assistente procura conteúdos compatíveis: algo mais fácil de acompanhar quando estou cansado, uma obra que exige atenção moderada quando estou disposto ou um conteúdo mais denso quando tenho energia para me envolver.
 
 ## Como funciona
 
@@ -28,11 +31,14 @@ flowchart LR
     D --> F[Google Sheets]
     E --> F
     F --> G[Consulta antes de recomendar]
+    J[Energia mental do momento] --> G
     H[Fontes externas atuais] --> G
     G --> I[Recomendação com contexto]
 ```
 
 Antes de recomendar, o assistente verifica o catálogo. Um título concluído não volta como novidade. Algo abandonado ou mal avaliado pesa contra sugestões parecidas. Um item marcado como `precisa_confirmar` não é tratado como assistido.
+
+O nível de energia não mede se uma obra é boa ou ruim. Ele representa o esforço que ela costuma exigir de mim. A mesma categoria pode ter conteúdos leves, moderados ou intensos.
 
 ## Estrutura da base
 
@@ -55,6 +61,7 @@ O modelo de dados está em [docs/modelo-de-dados.md](docs/modelo-de-dados.md). O
 
 - **O histórico vem antes da recomendação.** A LLM consulta a base antes de sugerir.
 - **Minha nota tem mais peso.** Avaliações externas ajudam a explicar o risco, mas não substituem o gosto registrado.
+- **A energia do momento filtra a lista.** O assistente cruza minha disposição atual com a energia atribuída a cada conteúdo.
 - **Citado não significa assistido.** Estados incertos permanecem separados até uma confirmação.
 - **Disponibilidade exige fonte atual.** Catálogos de streaming e datas mudam.
 - **Títulos alternativos são preservados.** Isso reduz duplicidade entre nomes em português, nomes originais e abreviações.
