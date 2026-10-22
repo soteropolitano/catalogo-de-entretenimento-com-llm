@@ -6,7 +6,7 @@ O MVP separa o raciocínio da LLM, a persistência dos registros e as fontes usa
 
 ### LLM
 
-Interpreta a conversa, identifica o título, normaliza estado e progresso, consulta o histórico e prepara uma atualização compatível com a planilha. Também usa as regras do catálogo antes de recomendar.
+Interpreta a conversa, identifica o título, normaliza estado, progresso e energia mental, consulta o histórico e prepara uma atualização compatível com a planilha. Também usa as regras do catálogo antes de recomendar.
 
 ### Google Sheets
 
@@ -35,11 +35,13 @@ sequenceDiagram
     L->>U: Confirma quando existe ambiguidade
     L->>S: Atualiza o registro
     U->>L: Pede uma recomendação
+    L->>U: Identifica a energia mental disponível
     L->>S: Consulta vistos, rejeitados e prioridades
+    S-->>L: Devolve a energia atribuída aos candidatos
     L->>F: Verifica informações atuais
     L-->>U: Recomenda com justificativa
 ```
 
 ## Princípio central
 
-A LLM não é a base de dados. Ela interpreta e consulta. O Sheets mantém o estado e o Drive organiza o material auxiliar. Assim, uma nova conversa não precisa reconstruir todo o histórico do zero.
+A LLM não é a base de dados. Ela interpreta e consulta. O Sheets mantém o estado, inclusive a energia mental atribuída a cada conteúdo, e o Drive organiza o material auxiliar. Assim, uma nova conversa não precisa reconstruir todo o histórico do zero.
