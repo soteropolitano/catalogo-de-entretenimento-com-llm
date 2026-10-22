@@ -1,5 +1,7 @@
 # Catálogo de Entretenimento com LLM
 
+![Capa do projeto: Catálogo de Entretenimento](https://raw.githubusercontent.com/soteropolitano/catalogo-de-entretenimento-com-llm/main/assets/linkedin-cover.jpg)
+
 Eu mantinha filmes, séries, animes, documentários e jogos em listas separadas. O problema não era apenas lembrar o que queria assistir: uma recomendação podia repetir algo já concluído, ignorar uma avaliação ruim ou confundir um título apenas citado com algo que realmente entrou na lista.
 
 Criei este MVP para transformar esse histórico em contexto útil para uma LLM. O catálogo fica no Google Sheets, as fontes e os registros auxiliares ficam organizados no Google Drive e as regras orientam a recomendação antes que o modelo sugira um título.
