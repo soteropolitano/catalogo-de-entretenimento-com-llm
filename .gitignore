@@ -1,0 +1,21 @@
+# Base pessoal
+dados-reais/
+historico/
+snapshots/
+backups/
+exports/
+*.xlsx
+*.xls
+*.ods
+
+# Configuração local e credenciais
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+token*.json
+
+# Temporários
+~*
+.DS_Store
