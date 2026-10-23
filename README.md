@@ -83,6 +83,10 @@ A planilha oficial possui uma base principal, visões por estado, resumo, regras
 
 Os próximos testes devem medir duplicidades, qualidade da normalização dos títulos, atualização de progresso e quanto as recomendações melhoram quando notas e rejeições passam a ser usadas de forma consistente.
 
+## Arquivos privados de trabalho
+
+O catálogo e o backup foram exportados para o [repositório privado Codex](https://github.com/soteropolitano/Codex/tree/main/projetos/catalogo-entretenimento/originais/GPT/Entretenimento). O repositório público mantém apenas documentação e exemplos fictícios.
+
 ## Documentação
 
 - [Arquitetura](docs/arquitetura.md)
